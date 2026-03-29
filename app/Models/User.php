@@ -23,6 +23,10 @@ class User extends Authenticatable
         'email',
         'password',
     ];
+<<<<<<< HEAD
+=======
+    
+>>>>>>> bd7d43d (commit)
 
     /**
      * The attributes that should be hidden for serialization.

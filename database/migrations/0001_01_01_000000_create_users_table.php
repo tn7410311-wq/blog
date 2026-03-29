@@ -17,6 +17,11 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+<<<<<<< HEAD
+=======
+            $table->boolean('isActived')->default(true);
+            $table->boolean('isAdmin')->default(false);
+>>>>>>> bd7d43d (commit)
             $table->rememberToken();
             $table->timestamps();
         });
@@ -34,6 +39,10 @@ return new class extends Migration
             $table->text('user_agent')->nullable();
             $table->longText('payload');
             $table->integer('last_activity')->index();
+<<<<<<< HEAD
+=======
+            
+>>>>>>> bd7d43d (commit)
         });
     }
 
