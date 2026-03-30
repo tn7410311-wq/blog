@@ -1,23 +1,6 @@
 @extends('layout')
 
 @section('content')
-<<<<<<< HEAD
-<h2>Register</h2>
-
-<form method="POST" action="/register">
-
-@csrf
-
-<input name="username" placeholder="Username">
-
-<input name="fullname" placeholder="Fullname">
-
-<input type="password" name="password" placeholder="Password">
-
-<button type="submit">Register</button>
-
-</form>
-=======
 <div style="height:100vh; display:flex; justify-content:center; align-items:center; background:#f4f6f9; font-family:Arial, sans-serif;">
     <div style="background:#fff; padding:40px 50px; width:350px; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.1); text-align:center;">
         <h2 style="margin-bottom:20px; color:#333;">Register</h2>
@@ -55,9 +38,8 @@
         </form>
 
         <a href="/login" style="display:block; margin-top:15px; color:#2196F3; text-decoration:none;">
-            quay lại đăng nhập
+            Quay lại đăng nhập
         </a>
     </div>
 </div>
->>>>>>> bd7d43d (commit)
 @endsection

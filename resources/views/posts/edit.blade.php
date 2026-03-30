@@ -1,23 +1,6 @@
 @extends('layout')
 
 @section('content')
-<<<<<<< HEAD
-<h2>Edit Post</h2>
-
-<form method="POST" action="/posts/{{$post->id}}">
-
-@csrf
-@method('PUT')
-
-<input name="title" value="{{$post->title}}">
-
-<textarea name="content">{{$post->content}}</textarea>
-
-<button>Update</button>
-
-</form>
-=======
-
 <div style="min-height:100vh; display:flex; justify-content:center; align-items:flex-start; background:#f4f6f9; font-family:Arial, sans-serif; padding-top:40px;">
     <div style="background:#fff; padding:30px 40px; width:500px; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.1); text-align:center;">
         <h2 style="margin-bottom:25px; color:#333;">Chỉnh sửa bài viết</h2>

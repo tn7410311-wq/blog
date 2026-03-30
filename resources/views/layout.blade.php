@@ -14,13 +14,10 @@
       theme: {
         extend: {
           colors: {
-<<<<<<< HEAD
             primary: "#006b5f",
             "background-light": "#f5f8f8",
-=======
             primary: "#4CAF50",
             "background-light": "#706e6e",
->>>>>>> bd7d43d (commit)
             "background-dark": "#0f2321",
           },
           fontFamily: {
@@ -30,25 +27,14 @@
       }
     }
   </script>
-<<<<<<< HEAD
     <title>Document</title>
-=======
     <title>My blog</title>
->>>>>>> bd7d43d (commit)
 </head>
-
-
 <body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen pb-20">
     <header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-4 py-3 flex items-center justify-between gap-4">
 <div class="flex items-center gap-2">
-
-<<<<<<< HEAD
-<span class="material-symbols-outlined text-primary text-3xl">auto_stories</span>
-<h1 class="text-xl font-bold tracking-tight text-primary">My blog</h1>
-=======
 <span class="material-symbols-outlined text-primary">contract_edit</span>
-<h1 class="text-xl font-bold tracking-tight text-primary">Nhật ký của bạn</h1>
->>>>>>> bd7d43d (commit)
+<h1 class="text-xl font-bold tracking-tight text-primary">Nhật ký của bạn</h1>  
 </a>
 </div>
 <button class="relative p-2 rounded-full hover:bg-primary/10 transition-colors">

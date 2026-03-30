@@ -1,59 +1,6 @@
 @extends('layout')
 
 @section('content')
-<<<<<<< HEAD
-<h1>Manage Users</h1>
-
-<table border="1">
-
-<tr>
-<th>ID</th>
-<th>Username</th>
-<th>Fullname</th>
-<th>Status</th>
-<th>Action</th>
-</tr>
-
-@foreach($users as $user)
-
-<tr>
-
-<td>{{$user->id}}</td>
-
-<td>{{$user->username}}</td>
-
-<td>{{$user->fullname}}</td>
-
-<td>
-
-@if($user->isActived)
-Active
-@else
-Banned
-@endif
-
-</td>
-
-<td>
-
-@if($user->isActived)
-
-<a href="/admin/ban/{{$user->id}}">Ban</a>
-
-@else
-
-<a href="/admin/unban/{{$user->id}}">Unban</a>
-
-@endif
-
-</td>
-
-</tr>
-
-@endforeach
-
-</table>
-=======
 <div style="max-width: 900px; margin: 40px auto; padding: 20px; font-family: Arial, sans-serif;">
     <h1 style="text-align: center; color: #2c3e50; margin-bottom: 25px;">Manage Users</h1>
 
@@ -105,5 +52,4 @@ Banned
         </tbody>
     </table>
 </div>
->>>>>>> bd7d43d (commit)
 @endsection

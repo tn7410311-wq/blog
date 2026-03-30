@@ -1,21 +1,6 @@
 @extends('layout')
 
 @section('content')
-<<<<<<< HEAD
-<h2>Create Post</h2>
-
-<form method="POST" action="/posts">
-
-@csrf
-
-<input name="title" placeholder="Title">
-
-<textarea name="content" placeholder="Content"></textarea>
-
-<button>Create</button>
-
-</form>
-=======
 <div style="max-width: 700px; margin: 40px auto; padding: 25px; border: 1px solid #ecf0f1; border-radius: 8px; background-color: #f9fafb;">
     <h2 style="color: #2c3e50; margin-bottom: 5px;">Create New Post</h2>
     <p style="color: #7f8c8d; font-style: italic; margin-bottom: 20px;">
@@ -58,8 +43,10 @@
                 style="background-color: #3498db; color: white; padding: 14px 30px; font-size: 16px; border: none; border-radius: 6px; cursor: pointer; transition: background-color 0.3s ease;">
             Create Post
         </button>
-        <a style="background-color: #3498db; color: white; padding: 14px 30px; font-size: 16px; border: none; border-radius: 6px; cursor: pointer; transition: background-color 0.3s ease;"
-            href="/login">Logout</a>
+        <a href="/login"
+           style="display:inline-block; margin-left:10px; background-color: #3498db; color: white; padding: 14px 30px; font-size: 16px; border-radius: 6px; text-decoration:none; transition: background-color 0.3s ease;">
+           Logout
+        </a>
     </form>
 </div>
 
@@ -68,5 +55,4 @@
     btn.addEventListener('mouseover', () => btn.style.backgroundColor = '#2980b9');
     btn.addEventListener('mouseout', () => btn.style.backgroundColor = '#3498db');
 </script>
->>>>>>> bd7d43d (commit)
 @endsection

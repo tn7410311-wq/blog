@@ -1,44 +1,12 @@
 @extends('layout')
-
 @section('content')
-<<<<<<< HEAD
-<h1>Blog Posts</h1>
-
-<a href="/posts/create">Create Post</a>
-
-@foreach($posts as $post)
-
-<h2>{{$post->title}}</h2>
-
-<p>{{$post->content}}</p>
-
-<p>Author: {{$post->user->fullname}}</p>
-
-<a href="/posts/{{$post->id}}/edit">Edit</a>
-
-<form action="/posts/{{$post->id}}" method="POST">
-
-@csrf
-@method('DELETE')
-
-<button>Delete</button>
-
-</form>
-
-<hr>
-
-@endforeach
-=======
-
 <div style="min-height:100vh; display:flex; justify-content:center; align-items:flex-start; background:#f4f6f9; font-family:Arial, sans-serif; padding-top:40px;">
     <div style="background:#fff; padding:30px 40px; width:800px; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.1); text-align:center;">
         <h1 style="margin-bottom:25px; color:#333;">Danh sách bài viết</h1>
-
         <a href="{{ url('/posts/create') }}" 
            style="display:inline-block; margin-bottom:20px; background:#4CAF50; color:white; padding:10px 20px; border-radius:8px; text-decoration:none; font-size:16px;">
             Tạo bài viết mới
         </a>
-
         @if($posts->count())
             @foreach($posts as $post)
             <div style="text-align:left; border-bottom:1px solid #eee; padding:15px 0;">
@@ -83,6 +51,4 @@
         </form>
     </div>
 </div>
-
->>>>>>> bd7d43d (commit)
 @endsection
